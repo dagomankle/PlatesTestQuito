@@ -1,3 +1,7 @@
+"""
+SImple unit tests that are easily modifiable to fit the needs at the moment
+"""
+
 import unittest
 import arrow
 from Support import plate as p

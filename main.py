@@ -1,19 +1,7 @@
 """
 Made by Daniel Ginez
-
-Data about "pico y placa" in quito, ecuador obtained from: https://ecuador.seguros123.com/todo-lo-que-debes-saber-del-famoso-pico-y-placa/
-
-SCHEDULE
-     In the morning from 7:00 to 9:30
-     In the afternoon from 4:00 p.m. to 7:30 p.m.
-
-RESTRICTIONS
-Vehicles (private cars and motorcycles) whose last digit of the plate ends in:
-     Monday: 1 and 2
-     Tuesday: 3 and 4
-     Wednesday: 5 and 6
-     Thursday: 7 and 8
-     Friday: 9 and 0
+Main file that runs the project and integrates it in a console interface to interact with,
+Temporary replaces a presentation layer
 """
 from Support import functions as f
 
@@ -66,4 +54,8 @@ print("WELCOME TO 'WILL YOU OR HAVE YOU BEEN FINED'")
 print("")
 
 if __name__ == '__main__':
+	"""The parameters sent are considered standard but can be changed to any required
+  the parameters are:
+  plateLenght,plateSeparator, dateSeparator, timeSeparator, timeLimits
+  """
   mains(8, "-", "/", ":", [700, 930, 1600, 1930])

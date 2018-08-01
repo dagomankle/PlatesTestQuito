@@ -1,5 +1,6 @@
 """
-Made switcher 
+Made switcher that sets the day the car has restricctions according to data recolected
+is the closest this small project comes to a data access layer
 """
 class SwitcherDay(object):
     def plate_to_days(self, argument):

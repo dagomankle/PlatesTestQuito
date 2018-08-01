@@ -1,5 +1,7 @@
 """
 Small file to hold individual supporting functions
+serves as a business logic layer doing the validating and
+evaluating from acquired data
 
 """
 import arrow
@@ -41,6 +43,7 @@ def getTime(c, timeSeparator):
 
   return r  
 
+#Evaluate decides bases on the data recolected so far if your car has any restriccions and returns 3 posible results
 def evaluate(plate, date, time, timeLimits, evaluation):
   switch = sD.SwitcherDay()
   weekDay = date.weekday()
